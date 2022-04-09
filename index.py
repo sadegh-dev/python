@@ -15,5 +15,7 @@ class Person :
         return False
 
 
+p1 = Person('charlie', '111111')
+p2 = Person('katty', '111111')
 
-
+print(p1 == p2)
