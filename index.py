@@ -1,15 +1,19 @@
 
 class Person :
-    counter = 0
-    def __init__(self):
-        Person.counter += 1
-        print(f'Person number {Person.counter}')
+    def __init__(self, name, national_code):
+        self.name = name
+        self.national_code = national_code
 
-p1 = Person()
-p2 = Person()
-p3 = Person()
-p4 = Person()
+    def __eq__(self,other):
+        if isinstance(other, self.__class__):
+            return self.national_code == other.national_code
+        return False
+
+    def __ne__(self, other):
+        if isinstance(other, self.__class__):
+            return self.national_code != other.national_code
+        return False
 
 
 
-print(Person.__dict__['counter'])
+
