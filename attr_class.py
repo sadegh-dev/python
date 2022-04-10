@@ -31,12 +31,21 @@ class Person:
 p1 = Person('char123', '2003400005','09121002030')
 
 
+print(p1.city)
+# it is not exists.
+
+print(p1.tell)
+# return Value.
 
 print(p1.username)
-#don't acces.
+# don't acces.
 
 p1.national_code = '2030'
-#value is wrong
+# value is wrong
 
 del p1.username
+# delete
+
+del p1.tell
+# you can't delete tell
 
