@@ -6,3 +6,6 @@ class User:
     def get_email(self):
         return f'{self.name}@email.com'
 
+u1 = User('katty')
+
+print(u1.get_email)
