@@ -5,11 +5,12 @@ class Person:
 
 
 class User(Person):
-    def __init__(self, email, name):
+    def __init__(self, name, email):
         super().__init__(name)
         self.username = email
-        print(f'Create User by username is {email}')
+        print(f'Create User by email is {email}')
 
 
 
-e1 = User()
+e1 = User('charlie','charlie@email.com')
+print(e1.name)
